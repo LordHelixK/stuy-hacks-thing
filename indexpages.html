@@ -1,0 +1,63 @@
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <style>
+  #text {
+    font-family: "Comic Sans MS";
+    font-size: 36px;
+  }
+  div {
+
+    clear:both;
+    overflow:visible;
+  }
+  .fade {display:none;}
+  img {float:none;}
+  </style>
+</head>
+<body>
+  <div>
+  <img class="fade" src="img6.png" align="left">
+</div>
+<div>
+  <img class="fade" src="img7.png" align="left">
+</div>
+<div>
+  <img class="fade" src="img8.png" align="left">
+</div>
+<div>
+  <img class="fade" src="img9.png" align="left">
+</div>
+<div>
+<img class="fade" src="img10.png" align="left">
+</div>
+<div>
+<img class="fade" src="img12.png" align="left">
+</div>
+<div>
+  <img class="fade" src="img13.png" align="left">
+</div>
+<div>
+  <img class="fade" src="img14.png" align="left">
+</div>
+<div>
+  <img class="fade" src="img15.png" align="left">
+</div>
+<div>
+  <img class="fade" src="img16.png" align="left">
+</div>
+<div id="text">
+<a href="indexpagesresults1.html" class="fade" align="left"> Run </a>
+</div>
+<div id="text">
+<a href="indexpagesresults2.html" class="fade" align="left"> Or: Throw something at him</a>
+</div>
+</body>
+<script>
+$(window).load(function() {
+$(".fade").each(function(i) {
+$(this).delay(2000*i).fadeIn();
+});
+});
+</script>
+</html>

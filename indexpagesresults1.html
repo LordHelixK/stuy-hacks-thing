@@ -1,0 +1,35 @@
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <style>
+  #text {
+    font-family: "Comic Sans MS";
+    font-size: 36px;
+  }
+  div {
+    clear:both;
+    overflow:visible;
+  }
+  .fade {display:none;}
+  img {float:none;}
+  </style>
+</head>
+<body>
+  <div>
+    <img class="fade" src="result1.png" align="left">
+  </div>
+  <div>
+  <img class="fade" src="result1.2.png" align="left">
+</div>
+<div id="text">
+  <a href="index.html" class="fade" align="left">Go back to try again!</a>
+</div>
+</body>
+<script>
+$(window).load(function() {
+$(".fade").each(function(i) {
+$(this).delay(2000*i).fadeIn();
+});
+});
+</script>
+</html>

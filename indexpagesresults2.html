@@ -1,0 +1,43 @@
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <style>
+  #text {
+    font-family: "Comic Sans MS";
+    font-size: 36px;
+  }
+  div {
+    clear:both;
+    overflow:visible;
+  }
+  .fade {display:none;}
+  img {float:none;}
+  </style>
+</head>
+<body>
+  <div>
+    <img class="fade" src="result2.png" align="left">
+</div>
+<div>
+  <img class="fade" src="img17.png" align="left">
+</div>
+<div>
+<img class="fade" src="img18.png" align="left">
+</div>
+<div>
+<img class="fade" src="img19.png" align="left">
+</div>
+<div id="text">
+<a href="indexresults3.html" class="fade" align="left"> Use your own physical strength to hit your attacker </a>
+<div id="text">
+<a href="indexresults4.html" class="fade" align="left"> Pick up a metal tool (shovel) and aim at the killer </a>
+</div>
+</body>
+<script>
+$(window).load(function() {
+$(".fade").each(function(i) {
+$(this).delay(2000*i).fadeIn();
+});
+});
+</script>
+</html>
